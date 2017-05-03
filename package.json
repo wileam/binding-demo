@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "./node_modules/.bin/hss"
+  },
+  "devDependencies": {
+    "http-static-server": "^0.2.3"
+  }
+}

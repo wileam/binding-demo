@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>binding demo</title>
+  <link rel="stylesheet" href="semantic.min.css">
+  <style>
+    .main {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ui main text container">
+    <h1>Simple Demo</h1>
+    <ul>
+      <li>change the `data.value` on the console, see how the input and div changes.</li>
+      <li>change the input value, see how the `data.value` and the div changes.</li>
+    </ul>
+
+    <label for="input">Input: </label><input type="text" id="input">
+    <div>Value: <span id="text"></span></div>
+  </div>  
+  
+  <script src="js/myEventEmitter.js"></script>
+  <script src="js/model/DataBase.js"></script>
+  <script src="js/el/ElementBase.js"></script>
+  <script src="js/el/Input.js"></script>
+  <script src="js/el/Div.js"></script>
+  <script src="simple.js"></script>
+</body>
+</html>
