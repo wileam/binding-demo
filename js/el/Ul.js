@@ -14,10 +14,6 @@
         for (var i = 0; i < d.value.length; i++) {
           list += `<li>${d.value[i].text}</li>`
         }
-      } else if( d && d.value && d.value instanceof Object ) {
-        for (var prop in d.value) {
-          list += `<li>${d.value[prop]}</li>`
-        }
       }
       this[EL].innerHTML = list;
     }
